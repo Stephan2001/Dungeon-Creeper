@@ -13,7 +13,7 @@ public class MerchantCharacter extends DefaultCharacter{
     }
     @Override
     public void triggerPlayerDefence(Monster M){
-        int shield = getDEF()*2;
+        int shield = getDEF()*3;
         M.updateATK(shield);
         System.out.println("You cowered behind a large rock, shielding you for" + shield + " damage");
     }
@@ -33,7 +33,7 @@ public class MerchantCharacter extends DefaultCharacter{
     public static MerchantCharacter setMerchantCharacter(DefaultCharacter d){
         MerchantCharacter MC = new MerchantCharacter(d.getCharacter(),d.getChoice());
         MC.setHP(25);
-        MC.setDEF(7);
+        MC.setDEF(4);
         MC.setATK(8);
         MC.setSkillCount(10);
         return MC;

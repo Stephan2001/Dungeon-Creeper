@@ -29,7 +29,7 @@ public class BeserkerCharacter extends DefaultCharacter{
     public static BeserkerCharacter setBeserkerCharacter(DefaultCharacter d){
         BeserkerCharacter BC = new BeserkerCharacter(d.getCharacter(),d.getChoice());
         BC.setHP(45);
-        BC.setDEF(7);
+        BC.setDEF(4);
         BC.setATK(4);
         BC.setSkillCount(4);
         return BC;

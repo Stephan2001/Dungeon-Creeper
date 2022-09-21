@@ -13,7 +13,7 @@ public class RogueCharacter extends DefaultCharacter{
     }
     @Override
     public void triggerPlayerDefence(Monster M){
-        int shield = getDEF()*2;
+        int shield = getDEF()*3;
         M.updateATK(shield);
         System.out.println("You dodged to the side, shielding you for " + shield + " damage");
     }
@@ -28,7 +28,7 @@ public class RogueCharacter extends DefaultCharacter{
     public static RogueCharacter setRogueCharacter(DefaultCharacter d){
         RogueCharacter RC = new RogueCharacter(d.getCharacter(),d.getChoice());
         RC.setHP(35);
-        RC.setDEF(6);
+        RC.setDEF(4);
         RC.setATK(7);
         RC.setSkillCount(7);
         return RC;

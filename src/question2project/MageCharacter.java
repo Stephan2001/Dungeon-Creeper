@@ -28,7 +28,7 @@ public class MageCharacter extends DefaultCharacter{
     public static MageCharacter setMageCharacter(DefaultCharacter d){
         MageCharacter MGC = new MageCharacter(d.getCharacter(),d.getChoice());
         MGC.setHP(30);
-        MGC.setDEF(5);
+        MGC.setDEF(4);
         MGC.setATK(3);
         MGC.setSkillCount(8);
         return MGC;
